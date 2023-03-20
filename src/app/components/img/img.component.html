@@ -1,4 +1,6 @@
-<img [src]="img" *ngIf="img; else elseImg" alt="">
+<img (load)="imgLoaded()" [src]="img" *ngIf="img; else elseImg" alt="" width="200px" (error)="imgError()">
+<!-- <h3>{{counter}}</h3> -->
+
 <ng-template #elseImg>
-  <img src="../../../assets/images/my-hero-academia-quirks-1557833813.jpg" alt="">
+  <img [src]="imageDefault" alt="">
 </ng-template>
