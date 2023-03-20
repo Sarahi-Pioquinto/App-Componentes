@@ -9,7 +9,7 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
 
   @Input()img:string='';
   @Output() loaded = new EventEmitter<string>();
-  imageDefault='../../../assets/images/imagen.jpg';
+  imageDefault='../../../assets/images/my-hero-academia-quirks-1557833813.jpg';
 
   counter=15;
   counterfn:number | undefined;
